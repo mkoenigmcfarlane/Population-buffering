@@ -4,11 +4,6 @@ map.setView([44.5, -95], 6);
 
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
 
-//cartodb.createLayer(map, 'https://koeni129.cartodb.com/api/v2/viz/a905e3a4-9eac-11e5-bb9e-0e787de82d45/viz.json').addTo(map);
-
-/*window.onload = function() {
-  cartodb.createVis('map-container', 'https://koeni129.cartodb.com/api/v2/viz/a905e3a4-9eac-11e5-bb9e-0e787de82d45/viz.json');
-}*/
 var layer = new L.GeoJSON().addTo(map);
 map.on('click', function(e){
 	var lnglat = [e.latlng.lng, e.latlng.lat];
